@@ -60,6 +60,11 @@ public class SortedLinkedList<E extends Comparable<? super E>> extends AbstractS
 		currentSize = 0;
 	}
 
+	/**
+	 * Receives an object of generic type E and adds it to SortedLinkedList object. 
+	 *
+	 * @param e object of type E to add to SortedLinkedList object
+	 */
 	@Override
 	public void add(E e) {
 		/* Declaring and initializing node variables */
@@ -95,6 +100,12 @@ public class SortedLinkedList<E extends Comparable<? super E>> extends AbstractS
 		currentSize++;
 	}
 
+	/**
+	 * Receives an object of generic type E and removes it from SortedLinkedList object. 
+	 *
+	 * @param e object of type E to remove from SortedLinkedList object
+	 * @return boolean true if e was removed, false otherwise
+	 */
 	@Override
 	public boolean remove(E e) {
 		/* Declaring node variables */
@@ -120,6 +131,12 @@ public class SortedLinkedList<E extends Comparable<? super E>> extends AbstractS
 		return false;
 	}
 
+	/**
+	 * Receives an index and removes object of generic type E from SortedLinkedList object at that position. 
+	 *
+	 * @param index integer position of object of type E to remove from SortedLinkedList object
+	 * @return E value of removed node if removed, null otherwise
+	 */
 	@Override
 	public E removeIndex(int index) {
 		/* Declaring node variables */
@@ -144,6 +161,12 @@ public class SortedLinkedList<E extends Comparable<? super E>> extends AbstractS
 		return curNode.getValue();
 	}
 
+	/**
+	 * Receives an object of generic type E and returns index of first occurrence in SortedLinkedList object. 
+	 *
+	 * @param e object of type E to find first occurrence in SortedLinkedList object
+	 * @return int position of first occurrence in SortedLinkedList object, -1 if not found
+	 */
 	@Override
 	public int firstIndex(E e) {
 		/* Declaring node variables */
@@ -160,6 +183,12 @@ public class SortedLinkedList<E extends Comparable<? super E>> extends AbstractS
 		return -1;
 	}
 
+	/**
+	 * Receives an index and retrieves object of generic type E from SortedLinkedList object at that position. 
+	 *
+	 * @param index integer position of object of type E to retrieve from SortedLinkedList object
+	 * @return E value of node if found, null if index is out of bounds
+	 */
 	@Override
 	public E get(int index) {
 		/* If index is out of bounds return null */
